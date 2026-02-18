@@ -3,7 +3,7 @@
 -- based on specific conditions.
 
 
--- 1️ Basic Filtering
+-- 1 Basic Filtering
 
 SELECT *
 FROM Students
@@ -27,7 +27,7 @@ WHERE age < 18 OR age > 60;
 
 
 
--- 4️ Filtering with String Condition
+-- 4 Filtering with String Condition
 
 SELECT *
 FROM Students
