@@ -1,15 +1,11 @@
--- =========================================================
 -- CONCEPT: SUBQUERIES
 -- Purpose:
 -- A query written inside another query.
 -- Used for filtering, comparison, and dynamic value generation.
--- =========================================================
 
 
 
--- ========================================================
 -- Sample Table
-- ========================================================
 
 CREATE TABLE Employees (
     emp_id INT PRIMARY KEY,
@@ -27,10 +23,8 @@ INSERT INTO Employees VALUES
 
 
 
--- =========================================================
--- 1️⃣ SCALAR SUBQUERY
+-- 1️ SCALAR SUBQUERY
 -- Returns single value
--- =========================================================
 
 -- Employees earning more than average salary
 
@@ -43,9 +37,7 @@ WHERE salary > (
 
 
 
--- =========================================================
--- 2️⃣ SUBQUERY IN SELECT CLAUSE
--- =========================================================
+-- 2️ SUBQUERY IN SELECT CLAUSE
 
 -- Show each employee salary and overall average salary
 
@@ -57,10 +49,8 @@ FROM Employees;
 
 
 
--- =========================================================
--- 3️⃣ SUBQUERY WITH IN
+-- 3️ SUBQUERY WITH IN
 -- Returns multiple values
--- =========================================================
 
 -- Employees working in departments that have salary > 70000
 
@@ -74,10 +64,8 @@ WHERE department IN (
 
 
 
--- =========================================================
--- 4️⃣ CORRELATED SUBQUERY
+-- 4️ CORRELATED SUBQUERY
 -- Inner query depends on outer query
--- =========================================================
 
 -- Employees earning more than department average
 
@@ -91,10 +79,8 @@ WHERE e1.salary > (
 
 
 
--- =========================================================
--- 5️⃣ SUBQUERY WITH EXISTS
+-- 5️ SUBQUERY WITH EXISTS
 -- Checks if rows exist
--- =========================================================
 
 SELECT emp_name
 FROM Employees e1
@@ -107,21 +93,17 @@ WHERE EXISTS (
 
 
 
--- =========================================================
 -- IMPORTANT NOTES
--- =========================================================
 
--- 1️⃣ Scalar subquery must return single value.
--- 2️⃣ IN works with multiple values.
--- 3️⃣ Correlated subquery runs once per outer row.
--- 4️⃣ EXISTS stops searching after first match.
--- 5️⃣ Subqueries can often be rewritten using JOIN.
--- 6️⃣ JOIN is usually faster than correlated subquery.
+-- 1️ Scalar subquery must return single value.
+-- 2️ IN works with multiple values.
+-- 3️,Correlated subquery runs once per outer row.
+-- 4️ EXISTS stops searching after first match.
+-- 5️ Subqueries can often be rewritten using JOIN.
+-- 6️ JOIN is usually faster than correlated subquery.
 
 
--- =========================================================
 -- COMMON MISTAKE
--- =========================================================
 
 -- SELECT *
 -- FROM Employees
@@ -134,6 +116,3 @@ WHERE EXISTS (
 
 
 
--- =========================================================
--- End of Subqueries
--- =========================================================
