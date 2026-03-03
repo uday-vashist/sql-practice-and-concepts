@@ -47,7 +47,7 @@ FROM Employees;
 
 
 -- 2️ RANK()
--- Same rank for ties, skips next rank
+-- Same rank for ties, skips next rank.
 
 SELECT 
     emp_name,
