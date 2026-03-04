@@ -1,6 +1,6 @@
 -- CONCEPT: SET OPERATIONS
 -- Purpose:
--- Combine results from multiple SELECT queries.
+-- Combines results from multiple SELECT queries.
 -- Each query must return the same number of columns
 -- and compatible data types.
 
@@ -32,7 +32,7 @@ INSERT INTO Suppliers VALUES
 -- 1️ UNION
 -- Combines results and removes duplicates
 
-SELECT customer_name AS name
+SELECT customer_name AS Name
 FROM Customers
 
 UNION
