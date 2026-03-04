@@ -38,7 +38,7 @@ FROM Customers
 UNION
 
 SELECT supplier_name
-FROM Suppliers;
+FROM suppliers;
 
 
 
