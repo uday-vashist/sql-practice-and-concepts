@@ -4,9 +4,9 @@
 
 
 -- Objective
---
+
 -- For each query_name calculate:
---
+
 -- 1️ Query Quality
 --     = AVG(rating / position)
 --
