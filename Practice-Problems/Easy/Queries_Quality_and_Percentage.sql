@@ -67,7 +67,6 @@ GROUP BY query_name;
 
 -- Important Insight
 -- AVG(CASE WHEN condition THEN 1 ELSE 0 END)
---
 -- works because:
 --
 -- TRUE  → 1
