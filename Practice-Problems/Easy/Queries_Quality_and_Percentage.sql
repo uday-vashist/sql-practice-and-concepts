@@ -58,7 +58,6 @@ GROUP BY query_name;
 
 
 -- Key Concepts Used
---
 -- • GROUP BY
 -- • Aggregate Functions (AVG)
 -- • Conditional Aggregation
