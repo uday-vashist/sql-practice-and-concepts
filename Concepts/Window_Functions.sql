@@ -80,10 +80,10 @@ FROM Employees;
 
 SELECT 
     emp_name,
-    department,
+    Department,
     salary,
     SUM(salary) OVER (
-        PARTITION BY department
+        PARTITION BY Department
         ORDER BY salary
     ) AS running_total
 FROM Employees;
