@@ -1,13 +1,10 @@
--- =========================================================
 -- CONCEPT: USER-DEFINED FUNCTIONS (UDF) - MySQL
 -- Purpose:
 -- Create reusable custom functions that return a value
--- =========================================================
 
 
--- =========================================================
--- 1️⃣ Basic Function Syntax
--- =========================================================
+
+-- 1️ Basic Function Syntax
 
 -- DELIMITER is used to define function body properly
 
@@ -24,17 +21,13 @@ DELIMITER ;
 
 
 
--- =========================================================
 -- Using the Function
--- =========================================================
 
 SELECT get_bonus(50000) AS bonus;
 
 
 
--- =========================================================
--- 2️⃣ Function with Conditional Logic
--- =========================================================
+-- 2️ Function with Conditional Logic
 
 DELIMITER //
 
@@ -59,9 +52,7 @@ DELIMITER ;
 
 
 
--- =========================================================
 -- Using Function in Query
--- =========================================================
 
 SELECT 
     emp_name,
@@ -71,9 +62,7 @@ FROM Employees;
 
 
 
--- =========================================================
--- 3️⃣ Function with Multiple Parameters
--- =========================================================
+-- 3️ Function with Multiple Parameters
 
 DELIMITER //
 
@@ -88,29 +77,23 @@ DELIMITER ;
 
 
 
--- =========================================================
 -- Example Usage
--- =========================================================
 
 SELECT calculate_discount(1000, 10) AS final_price;
 
 
 
--- =========================================================
 -- IMPORTANT RULES
--- =========================================================
 
--- 1️⃣ Functions must return a single value
--- 2️⃣ Cannot return result sets (use stored procedures for that)
--- 3️⃣ Use DETERMINISTIC if output depends only on input
--- 4️⃣ Functions can be used inside SELECT, WHERE, etc.
--- 5️⃣ Avoid heavy logic inside functions (performance impact)
-
+-- 1️ Functions must return a single value
+-- 2️ Cannot return result sets (use stored procedures for that)
+-- 3️ Use DETERMINISTIC if output depends only on input
+-- 4️ Functions can be used inside SELECT, WHERE, etc.
+-- 5️ Avoid heavy logic inside functions (performance impact)
 
 
--- =========================================================
+
 -- DIFFERENCE: FUNCTION vs PROCEDURE
--- =========================================================
 
 -- FUNCTION:
 -- • Returns a value
