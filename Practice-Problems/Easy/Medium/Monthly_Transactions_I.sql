@@ -9,10 +9,10 @@
 --
 -- For each month and country, compute:
 --
--- 1️⃣ Total number of transactions
--- 2️⃣ Number of approved transactions
--- 3️⃣ Total transaction amount
--- 4️⃣ Total approved transaction amount
+-- 1️ Total number of transactions
+-- 2️ Number of approved transactions
+-- 3️ Total transaction amount
+-- 4️ Total approved transaction amount
 --
 -- Month format: YYYY-MM
 -- =========================================================
