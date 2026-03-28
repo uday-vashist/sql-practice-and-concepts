@@ -1,41 +1,34 @@
--- =========================================================
 -- Problem: Product Sales Analysis I
 -- Platform: LeetCode
--- =========================================================
 
 
--- =========================================================
 -- Objective
---
+
 -- Retrieve:
 -- • product_name
 -- • year
 -- • price
---
+
 -- by joining Product and Sales tables.
--- =========================================================
 
 
--- =========================================================
 -- Tables:
---
+
 -- Product(product_id, product_name)
 -- Sales(product_id, year, price)
---
+
 -- Each sale record is linked to a product using product_id.
--- =========================================================
 
 
--- =========================================================
 -- Approach
---
--- 1️⃣ Join Product and Sales using product_id
---
--- 2️⃣ Select required columns:
+
+-- 1️ Join Product and Sales using product_id
+
+-- 2️ Select required columns:
 --     - product_name (from Product)
 --     - year, price (from Sales)
---
--- 3️⃣ Use INNER JOIN since only matching records are needed
+
+-- 3️ Use INNER JOIN since only matching records are needed
 -- =========================================================
 
 
@@ -51,24 +44,21 @@ INNER JOIN Sales s
 
 
 
--- =========================================================
 -- Key Concepts Used
---
+
 -- • INNER JOIN
 -- • Foreign key relationship
 -- • Table aliasing
---
--- =========================================================
 
 
--- =========================================================
+
 -- Important Insight
---
--- 1️⃣ INNER JOIN returns only matching rows from both tables.
---
--- 2️⃣ If a product has no sales, it will NOT appear in result.
---
--- 3️⃣ If you wanted all products (even without sales),
+
+-- 1️ INNER JOIN returns only matching rows from both tables.
+
+-- 2️ If a product has no sales, it will NOT appear in result.
+
+-- 3️ If you wanted all products (even without sales),
 --     you would use LEFT JOIN instead.
 --
 -- =========================================================
