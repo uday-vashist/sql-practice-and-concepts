@@ -1,10 +1,8 @@
--- =========================================================
 -- Problem: Biggest Single Number
 -- Platform: LeetCode
 -- =========================================================
 
 
--- =========================================================
 -- Objective
 --
 -- Find the largest number that appears exactly once.
@@ -12,7 +10,6 @@
 -- =========================================================
 
 
--- =========================================================
 -- Table:
 --
 -- MyNumbers(num)
@@ -22,15 +19,14 @@
 -- =========================================================
 
 
--- =========================================================
 -- Approach
 --
--- 1️⃣ Group numbers by value
+-- 1️ Group numbers by value
 --
--- 2️⃣ Filter numbers that appear exactly once
+-- 2️ Filter numbers that appear exactly once
 --     using HAVING COUNT(num) = 1
 --
--- 3️⃣ From remaining numbers, find the maximum
+-- 3️ From remaining numbers, find the maximum
 -- =========================================================
 
 
@@ -54,8 +50,6 @@ FROM (
 --
 -- =========================================================
 
-
--- =========================================================
 -- Important Insight
 --
 -- 1️ HAVING COUNT(num) = 1 filters unique numbers.
@@ -64,9 +58,6 @@ FROM (
 --
 -- 3️ MAX() extracts the largest among them.
 --
--- =========================================================
 
 
--- =========================================================
--- End of Problem
 -- =========================================================
